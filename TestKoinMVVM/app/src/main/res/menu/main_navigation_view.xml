@@ -9,12 +9,12 @@
     <item
         android:id="@+id/profileFragment"
         android:icon="@drawable/ic_action_second"
-        android:title="Second">
+        android:title="Profile">
 
     </item>
     <item
         android:id="@+id/settingsFragment"
-        android:title="Third"
+        android:title="Settings"
         android:icon="@drawable/ic_action_third">
 
     </item>
