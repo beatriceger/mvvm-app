@@ -21,7 +21,7 @@ class SplashViewModel : ViewModel() {
     }
 
     private fun checkUserIsLoggedIn(activity: MainActivity): Boolean {
-        return true
+        return false
     }
 
     private fun showLoginScreen(activity: MainActivity) {
@@ -29,6 +29,6 @@ class SplashViewModel : ViewModel() {
     }
 
     private fun showMainScreen(activity: MainActivity) {
-        activity.navController.navigate(R.id.action_splashFragment_to_loginFragment2, null)
+        activity.navController.navigate(R.id.action_splashFragment_to_navigation2, null)
     }
 }

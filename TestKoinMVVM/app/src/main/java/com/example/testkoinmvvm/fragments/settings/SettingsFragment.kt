@@ -1,4 +1,4 @@
-package com.example.testkoinmvvm.fragments
+package com.example.testkoinmvvm.fragments.settings
 
 import android.content.Context
 import android.os.Bundle

@@ -15,7 +15,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
-    val loginViewModel by viewModel<LoginViewModel>()
+    private val loginViewModel by viewModel<LoginViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,7 +35,7 @@ class LoginFragment : Fragment() {
 
     private fun initLoginAction() {
         binding.loginBtn.setOnClickListener {
-            loginViewModel.loginUser(name.text.toString().trim(), password.text.toString().trim())
+            loginViewModel.loginUser(binding.name.text.toString().trim(), binding.password.text.toString().trim())
         }
     }
 
